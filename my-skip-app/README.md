@@ -1,12 +1,42 @@
-# React + Vite
+# Skip Selection Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redesigned skip selection page for We Want Waste technical assessment.
 
-Currently, two official plugins are available:
+## Run the app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## What I changed
+
+**Design**
+- Dark theme with gradient backgrounds
+- Card layout instead of list
+- Each skip size has unique color
+- Hover effects and animations
+- Selection shows blue ring and check mark
+
+**Responsive** 
+- Mobile: 1 column
+- Tablet: 2 columns  
+- Desktop: 3 columns
+- Bottom bar stacks on mobile
+- Text sizes adjust
+
+**Functionality**
+- Click card to select
+- Click again to deselect
+- Bottom bar appears with selection
+- Shows price with VAT calculated
+- Uses real API data
+
+**Tech**
+- React with Vite
+- Tailwind CSS
+- Fetches from We Want Waste API
+
+That's it. The app maintains all original functionality with a completely new look.
